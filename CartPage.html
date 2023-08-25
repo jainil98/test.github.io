@@ -25,7 +25,7 @@
     <script>
 		!function (w, d, t) {
 		  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
-        )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
 		
 		  ttq.load('CJDVFCBC77UE7I79HT40');
 		  ttq.page();
@@ -38,37 +38,66 @@
       Each element is defined using tags, like this <div></div>
       The attributes like class="wrapper" let us style elements in the CSS
     -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">SE Pixel Demo</h1>
-        <img
-          src="https://cdn.glitch.global/7344aac7-9f99-485a-a9a4-00e01b2c4bea/20230629-123424.gif?v=1688056519500"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the project. You can
-            use it to test installing pixel. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-          <a href="/ViewContent.html">
-            <button>
-                Start Demo
-            </button>
-          </a>
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+    
+    <h3>
+      My Shopping Cart
+    </h3>
+      <div style="display:flex">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
         </div>
+
+        <div>
+          <img id="product_img" style="width:100px;height:100px;" alt="">
+        </div>
+
+        <div style="width:400px">
+          <span id="title"> </span>
+          <span id="SKU"></span>
+          <span id="description"></span>
+        </div>
+        
+        <div class="quantity">
+          <input type="text" name="name" value="1">
+        </div>
+
+        <div class="total-price" id="value"></div>
       </div>
-    </div>
+    
+        <div style="display:flex">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+<!--         <div>
+          <img style="width:100px;height:100px;" src="https://cdn.glitch.global/7344aac7-9f99-485a-a9a4-00e01b2c4bea/Basketball.png?v=1688063525621" alt="">
+        </div>
+
+        <div style="width:400px">
+          <span>Baseketball</span>
+          <span>for proplayer</span>
+        </div>
+
+        <div class="quantity">
+          <input type="text" name="name" value="1">
+        </div>
+
+        <div class="total-price">$999</div>
+      </div> -->
+        <h4>
+        <a
+        class="btn--remix"
+        href="/CompletePayment.html">
+        Check Out
+        </a>
+        </h4>
+    
     <!-- The footer holds our remix button — you can keep or delete it ✂ -->
     <footer class="footer">
       <div class="links"></div>
+      
       <a
         class="btn--remix"
         href="/index.html"
